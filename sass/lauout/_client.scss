@@ -1,0 +1,30 @@
+.client {
+  --item: 6;
+  --indent: 30px;
+}
+
+.client__item {
+  fill: #afb1b8;
+}
+
+.client__link {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  padding: 15px 30px;
+  @include flex-center;
+  color: #afb1b8;
+
+  transition-property: color, border;
+  @include anim;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.client__lcon {
+  fill: currentColor;
+}

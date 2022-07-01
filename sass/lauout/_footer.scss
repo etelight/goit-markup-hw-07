@@ -1,0 +1,139 @@
+.footer-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #2f303a;
+}
+
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__item:first-child {
+  margin-right: 70px;
+}
+
+.footer-contact {
+  margin-top: 20px;
+}
+
+.footer-contact__address {
+  margin-bottom: 9px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.footer-contact__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-contact__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition-property: color;
+  @include anim;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-soc {
+  margin-right: 93px;
+}
+
+.footer-main-title {
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.footer-soc__icon-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-soc__icon-item {
+  width: 44px;
+  height: 44px;
+}
+.footer-soc__icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-soc__icon-link {
+  @include flex-center;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition-property: background-color;
+  @include anim;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-soc__icon {
+  fill: #fff;
+}
+
+.footer-form {
+  position: relative;
+  right: 0;
+}
+
+.footer-form__wrap {
+  display: flex;
+}
+
+.footer-form__input {
+  margin-right: 12px;
+  padding-left: 16px;
+
+  height: 50px;
+  width: 358px;
+
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: transparent;
+
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.footer-btn {
+  align-items: center;
+}
+
+.footer-form__btn-icon {
+  margin-left: 10px;
+
+  fill: #fff;
+}
